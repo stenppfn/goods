@@ -21,8 +21,9 @@ urlpatterns = [
     # 引入其他应用的路由配置
     path('user/', include('user.urls')),
     path('data_analysis/', include('data_analysis.urls')),
-    path('order/', include('order.urls')),
+    # path('order/', include('order.urls')),
     path('consultations/', include('consultations.urls')),
     path('products/', include('products.urls')),
     path('transactions/', include('transactions.urls')),
 ]
+

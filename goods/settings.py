@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-_h@lj4ya4k*c*!qc2%1kem6cgt+vyo4a9futwxnax*o=u41d!w
 DEBUG = True
 
 ALLOWED_HOSTS = []
+AUTH_USER_MODEL = 'user.User'  #  其中user为app名称，User为模型类名称
 
 
 # Application definition
@@ -41,8 +42,13 @@ INSTALLED_APPS = [
 
 MY_APPS = [
     'user',
+    'products',
+    'consultations',
+    'data_analysis',
+    'transactions'
 
 ]
+INSTALLED_APPS = MY_APPS+INSTALLED_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
